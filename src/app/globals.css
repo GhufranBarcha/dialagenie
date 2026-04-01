@@ -1,15 +1,20 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: #111827;
+  --color-accent: #4F46E5;
+  --color-accent-hover: #4338CA;
+  --color-accent-light: #38BDF8;
+  --color-text-body: #475569;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +27,69 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  @apply antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll reveal base states */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Staggered children delays */
+.stagger>*:nth-child(1) {
+  transition-delay: 0ms;
+}
+
+.stagger>*:nth-child(2) {
+  transition-delay: 100ms;
+}
+
+.stagger>*:nth-child(3) {
+  transition-delay: 200ms;
+}
+
+.stagger>*:nth-child(4) {
+  transition-delay: 300ms;
+}
+
+.stagger>*:nth-child(5) {
+  transition-delay: 400ms;
+}
+
+.stagger>*:nth-child(6) {
+  transition-delay: 500ms;
 }
