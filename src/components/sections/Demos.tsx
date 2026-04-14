@@ -17,7 +17,7 @@ export default function Demos() {
                             Hear our AI in action.
                         </h3>
                         <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-                            Listen to real, unedited conversations between our AI Receptionist and actual callers. Notice the natural pauses, intelligent context switching, and perfect scheduling capabilities.
+                            Listen to sample conversations based on real-world call scenarios. Notice the natural pauses, intelligent context switching, and scheduling flow.
                         </p>
 
                         <div className="space-y-4">

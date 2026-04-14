@@ -7,16 +7,19 @@ import "swiper/css/pagination";
 
 const testimonials = [
     {
-        quote: "Dial a Genie completely changed our plumbing business. We stopped missing emergency calls at 2 AM, and our revenue jumped 30%.",
-        author: "Mark T.", role: "Owner, Apex Plumbing"
+        quote: "The setup was straightforward, and our team had a clear call flow in place quickly.",
+        author: "Early customer",
+        role: "Home Services"
     },
     {
-        quote: "The voice is so realistic that our clients actually compliment Sarah on her friendly tone. They have no idea it's AI.",
-        author: "Sarah J.", role: "Clinic Director"
+        quote: "We finally have a reliable way to handle after-hours calls and follow-ups without extra admin overhead.",
+        author: "Pilot user",
+        role: "Healthcare Front Desk"
     },
     {
-        quote: "We were spending $3,500/mo on a dedicated receptionist. Now we spend a fraction of that and get zero missed appointments.",
-        author: "David L.", role: "Real Estate Broker"
+        quote: "The calendar handoff and message capture flow made our inbound process much more consistent.",
+        author: "Pilot user",
+        role: "Real Estate Team"
     }
 ];
 
@@ -42,8 +45,8 @@ export default function Testimonials() {
         <section className="py-24 bg-gray-50 overflow-hidden border-t border-gray-100">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <p className="text-indigo-600 font-semibold tracking-widest uppercase text-xs mb-4">Social Proof</p>
-                    <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Loved by 500+ Businesses</h2>
+                    <p className="text-indigo-600 font-semibold tracking-widest uppercase text-xs mb-4">Real-World Use Cases</p>
+                    <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Built for teams that cannot miss calls.</h2>
                 </div>
 
                 {/* Desktop Grid */}

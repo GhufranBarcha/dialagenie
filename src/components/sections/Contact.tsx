@@ -36,8 +36,8 @@ export default function Contact() {
                         ))}
 
                         <div className="bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-2xl p-6 text-white">
-                            <p className="font-bold text-4xl mb-2">500+</p>
-                            <p className="text-indigo-200 font-medium">Businesses already trust Dial a Genie with their most valuable asset — their phone lines.</p>
+                            <p className="font-bold text-4xl mb-2">Launch-Ready</p>
+                            <p className="text-indigo-200 font-medium">Transparent onboarding, guided setup, and responsive support from day one.</p>
                         </div>
                     </div>
 

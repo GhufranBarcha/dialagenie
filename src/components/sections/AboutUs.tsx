@@ -2,9 +2,9 @@ import Image from "next/image";
 import { CheckCircle2, Users, PhoneCall } from "lucide-react";
 
 const stats = [
-    { label: "Businesses Served", value: "500+" },
-    { label: "Calls Handled", value: "2M+" },
-    { label: "Avg. Rating", value: "4.9★" },
+    { label: "Coverage", value: "24/7" },
+    { label: "Onboarding", value: "Guided" },
+    { label: "Integrations", value: "Ready" },
 ];
 
 export default function AboutUs() {
@@ -41,7 +41,7 @@ export default function AboutUs() {
                             {"We're"} redefining how businesses communicate.
                         </h2>
                         <p className="text-gray-500 text-lg leading-relaxed mb-10">
-                            At Dial a Genie, we believe every missed call is a missed opportunity. Our mission is to give growing businesses the same enterprise-grade AI tools that Fortune 500 companies use — at a fraction of the cost.
+                            At Dial a Genie, we believe every missed call is a missed opportunity. Our mission is to equip growing businesses with enterprise-grade AI receptionist workflows that are practical, accessible, and easy to deploy.
                         </p>
 
                         <ul className="space-y-4 mb-12">
