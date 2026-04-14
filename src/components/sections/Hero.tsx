@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, PhoneCall } from "lucide-react";
 import ScrollReveal from "@/components/ui/ScrollReveal";
@@ -34,9 +35,11 @@ export default function Hero() {
                     <Button variant="primary" size="lg" className="w-full sm:w-auto gap-2 group">
                         See it in Action <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </Button>
-                    <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2">
-                        <PhoneCall className="w-5 h-5" /> {"Let's"} Chat
-                    </Button>
+                    <Link href="#contact" className="w-full sm:w-auto">
+                        <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2">
+                            <PhoneCall className="w-5 h-5" /> {"Let's"} Chat
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </section>

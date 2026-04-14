@@ -26,7 +26,7 @@ export default function Comparison() {
                         <div className="grid grid-cols-3 bg-gray-50 border-b border-gray-200">
                             <div className="p-4 md:p-5 text-gray-400 text-[10px] md:text-xs font-bold uppercase tracking-widest">Feature</div>
                             <div className="p-4 md:p-5 text-center border-l border-gray-200 flex items-center justify-center">
-                                <span className="inline-block bg-indigo-600 text-white text-[10px] md:text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Dial a Genie AI</span>
+                                <span className="inline-block bg-indigo-600 text-white text-[10px] md:text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Dial a Genie</span>
                             </div>
                             <div className="p-4 md:p-5 text-center border-l border-gray-200 flex items-center justify-center">
                                 <span className="text-gray-400 text-[10px] md:text-xs font-bold uppercase tracking-wider">Human Receptionist</span>
@@ -36,17 +36,21 @@ export default function Comparison() {
                         {rows.map((row, i) => (
                             <div key={i} className={`grid grid-cols-3 border-b border-gray-100 hover:bg-indigo-50/30 transition-colors ${i === rows.length - 1 ? "border-b-0" : ""}`}>
                                 <div className="p-4 md:p-5 text-gray-600 font-semibold text-xs md:text-sm flex items-center">{row.label}</div>
-                                <div className="p-4 md:p-5 border-l border-gray-100 flex items-center justify-center gap-1.5 md:gap-2">
-                                    <div className="w-5 h-5 rounded-full bg-indigo-100 flex items-center justify-center shrink-0">
-                                        <Check className="w-3 h-3 text-indigo-600" />
+                                <div className="p-4 md:p-5 border-l border-gray-100 flex items-center justify-center">
+                                    <div className="w-[165px] md:w-[200px] grid grid-cols-[20px_1fr] items-center gap-1.5 md:gap-2">
+                                        <div className="w-5 h-5 rounded-full bg-indigo-100 flex items-center justify-center shrink-0">
+                                            <Check className="w-3 h-3 text-indigo-600" />
+                                        </div>
+                                        <span className="text-gray-900 font-semibold text-xs md:text-sm text-left">{row.ai}</span>
                                     </div>
-                                    <span className="text-gray-900 font-semibold text-xs md:text-sm">{row.ai}</span>
                                 </div>
-                                <div className="p-4 md:p-5 border-l border-gray-100 flex items-center justify-center gap-1.5 md:gap-2">
-                                    <div className="w-5 h-5 rounded-full bg-red-100 flex items-center justify-center shrink-0">
-                                        <X className="w-3 h-3 text-red-500" />
+                                <div className="p-4 md:p-5 border-l border-gray-100 flex items-center justify-center">
+                                    <div className="w-[165px] md:w-[200px] grid grid-cols-[20px_1fr] items-center gap-1.5 md:gap-2">
+                                        <div className="w-5 h-5 rounded-full bg-red-100 flex items-center justify-center shrink-0">
+                                            <X className="w-3 h-3 text-red-500" />
+                                        </div>
+                                        <span className="text-gray-500 font-medium text-xs md:text-sm text-left">{row.human}</span>
                                     </div>
-                                    <span className="text-gray-500 font-medium text-xs md:text-sm">{row.human}</span>
                                 </div>
                             </div>
                         ))}
