@@ -7,6 +7,7 @@ const rows = [
     { label: "Training Required", ai: "None", human: "Weeks" },
     { label: "Call Scripting", ai: "100% consistent", human: "Can have off days" },
     { label: "Lead Qualification", ai: "Every single call", human: "Inconsistent" },
+    { label: "Call Logs & Transcripts", ai: "Full timestamped transcripts", human: "Manual notes or partial records" },
 ];
 
 export default function Comparison() {

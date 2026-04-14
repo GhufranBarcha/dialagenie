@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Globe, CalendarDays, MessageSquare, PhoneForwarded, ShieldCheck, Zap } from "lucide-react";
+import { Globe, CalendarDays, MessageSquare, FileText, PhoneForwarded, ShieldCheck, Zap } from "lucide-react";
 import { StaggerContainer, StaggerItem } from "@/components/ui/ScrollReveal";
 
 const features = [
@@ -13,6 +13,7 @@ const features = [
     { icon: <MessageSquare className="w-6 h-6 text-emerald-600" />, title: "SMS Automations", description: "Instantly texts callers booking links, pricing sheets, or key information post-call.", badge: null, bg: "bg-emerald-50", border: "border-emerald-100" },
     { icon: <CalendarDays className="w-6 h-6 text-violet-600" />, title: "24/7 Calendar Sync", description: "Integrates with Google Calendar & Outlook to book without ever double-booking.", badge: null, bg: "bg-violet-50", border: "border-violet-100" },
     { icon: <Zap className="w-6 h-6 text-amber-500" />, title: "Instant Setup", description: "Up and answering calls in under 5 minutes. No developers, no IT, no headaches.", badge: null, bg: "bg-amber-50", border: "border-amber-100" },
+    { icon: <FileText className="w-6 h-6 text-cyan-600" />, title: "Call Logs & Transcripts", description: "Access a personalized dashboard with timestamped call logs and full transcripts for every call.", badge: null, bg: "bg-cyan-50", border: "border-cyan-100" },
     { icon: <ShieldCheck className="w-6 h-6 text-rose-600" />, title: "Enterprise Security", description: "Bank-grade encryption and SOC-2 compliant infrastructure.", badge: null, bg: "bg-rose-50", border: "border-rose-100" },
 ];
 

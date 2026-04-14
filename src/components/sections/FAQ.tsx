@@ -8,7 +8,8 @@ const faqs = [
     { category: "Technology", question: "Does it sound like a real person?", answer: "Yes! Dial a Genie uses the latest conversational AI and ultra-realistic voice synthesis. Most callers will not even realize they are speaking to an AI. It even handles interruptions and pauses naturally." },
     { category: "Integrations", question: "Can it integrate with my existing calendar?", answer: "Absolutely. We seamlessly integrate with Google Calendar, Outlook, Calendly, and most major CRM platforms to enable real-time booking and scheduling." },
     { category: "Technology", question: "What happens if the AI does not know the answer?", answer: "If a caller asks a question outside the configured knowledge base, it will politely take a message, gather the contact details, and immediately notify you or your team for follow-up." },
-    { category: "Billing", question: "Can I cancel at any time?", answer: "Yes — no hidden contracts. All plans are month-to-month. You can cancel, upgrade, or downgrade anytime directly from your account dashboard." }
+    { category: "Billing", question: "Can I cancel at any time?", answer: "Yes — no hidden contracts. All plans are month-to-month. You can cancel, upgrade, or downgrade anytime directly from your account dashboard." },
+    { category: "Dashboard", question: "Can I review the call logs/transcripts?", answer: "Absolutely! We time stamp all call logs and you can access a full transcript of all calls for later review." }
 ];
 
 export default function FAQ() {
