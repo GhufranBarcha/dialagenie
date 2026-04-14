@@ -48,20 +48,20 @@ export default function Contact() {
                                 <div className="grid sm:grid-cols-2 gap-4">
                                     <div>
                                         <label htmlFor="first_name" className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 block">First Name</label>
-                                        <input type="text" id="first_name" placeholder="John" className="w-full px-4 py-3.5 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all font-medium" />
+                                        <input type="text" id="first_name" autoComplete="given-name" placeholder="John" className="w-full px-4 py-3.5 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all font-medium" />
                                     </div>
                                     <div>
                                         <label htmlFor="last_name" className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 block">Last Name</label>
-                                        <input type="text" id="last_name" placeholder="Smith" className="w-full px-4 py-3.5 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all font-medium" />
+                                        <input type="text" id="last_name" autoComplete="family-name" placeholder="Smith" className="w-full px-4 py-3.5 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all font-medium" />
                                     </div>
                                 </div>
                                 <div>
                                     <label htmlFor="email" className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 block">Work Email</label>
-                                    <input type="email" id="email" placeholder="john@company.com" className="w-full px-4 py-3.5 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all font-medium" />
+                                    <input type="email" id="email" autoComplete="email" placeholder="john@company.com" className="w-full px-4 py-3.5 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all font-medium" />
                                 </div>
                                 <div>
                                     <label htmlFor="company" className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 block">Company Name</label>
-                                    <input type="text" id="company" placeholder="Your Business" className="w-full px-4 py-3.5 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all font-medium" />
+                                    <input type="text" id="company" autoComplete="organization" placeholder="Your Business" className="w-full px-4 py-3.5 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all font-medium" />
                                 </div>
                                 <div>
                                     <label htmlFor="message" className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 block">Message</label>

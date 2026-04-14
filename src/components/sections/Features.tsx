@@ -14,7 +14,7 @@ const features = [
     { icon: <CalendarDays className="w-6 h-6 text-violet-600" />, title: "24/7 Calendar Sync", description: "Integrates with Google Calendar & Outlook to book without ever double-booking.", badge: null, bg: "bg-violet-50", border: "border-violet-100" },
     { icon: <Zap className="w-6 h-6 text-amber-500" />, title: "Instant Setup", description: "Up and answering calls in under 5 minutes. No developers, no IT, no headaches.", badge: null, bg: "bg-amber-50", border: "border-amber-100" },
     { icon: <FileText className="w-6 h-6 text-cyan-600" />, title: "Call Logs & Transcripts", description: "Access a personalized dashboard with timestamped call logs and full transcripts for every call.", badge: null, bg: "bg-cyan-50", border: "border-cyan-100" },
-    { icon: <ShieldCheck className="w-6 h-6 text-rose-600" />, title: "Enterprise Security", description: "Bank-grade encryption and SOC-2 compliant infrastructure.", badge: null, bg: "bg-rose-50", border: "border-rose-100" },
+    { icon: <ShieldCheck className="w-6 h-6 text-rose-600" />, title: "Enterprise Security", description: "Encrypted data in transit and at rest, built on trusted voice infrastructure partners.", badge: null, bg: "bg-rose-50", border: "border-rose-100" },
 ];
 
 function FeatureCard({ feat }: { feat: typeof features[0] }) {

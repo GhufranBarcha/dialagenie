@@ -58,6 +58,7 @@ export default function Demos() {
                                 src="/demo_dashboard.png"
                                 alt="AI Voice Dashboard Mockup"
                                 fill
+                                sizes="(max-width: 1024px) 100vw, 50vw"
                                 className="object-cover"
                             />
                         </div>

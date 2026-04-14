@@ -16,7 +16,7 @@ export default function AboutUs() {
                     <div className="relative">
                         <div className="absolute inset-0 bg-gradient-to-tr from-indigo-100 to-sky-100 opacity-60 blur-3xl rounded-full" />
                         <div className="relative rounded-3xl overflow-hidden border border-gray-100 aspect-square shadow-2xl">
-                            <Image src="/about_us_ai.png" alt="AI and Human Collaboration" fill className="object-cover" />
+                            <Image src="/about_us_ai.png" alt="AI and Human Collaboration" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
                             <div className="absolute inset-0 bg-gradient-to-t from-white/50 via-transparent to-transparent" />
                         </div>
 
