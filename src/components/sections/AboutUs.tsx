@@ -41,7 +41,7 @@ export default function AboutUs() {
                             {"We're"} redefining how businesses communicate.
                         </h2>
                         <p className="text-gray-500 text-lg leading-relaxed mb-10">
-                            At DialaGenie, we believe every missed call is a missed opportunity. Our mission is to give growing businesses the same enterprise-grade AI tools that Fortune 500 companies use — at a fraction of the cost.
+                            At Dial a Genie, we believe every missed call is a missed opportunity. Our mission is to give growing businesses the same enterprise-grade AI tools that Fortune 500 companies use — at a fraction of the cost.
                         </p>
 
                         <ul className="space-y-4 mb-12">

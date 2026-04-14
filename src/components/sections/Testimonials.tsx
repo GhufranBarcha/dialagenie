@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 
 const testimonials = [
     {
-        quote: "DialaGenie completely changed our plumbing business. We stopped missing emergency calls at 2 AM, and our revenue jumped 30%.",
+        quote: "Dial a Genie completely changed our plumbing business. We stopped missing emergency calls at 2 AM, and our revenue jumped 30%.",
         author: "Mark T.", role: "Owner, Apex Plumbing"
     },
     {

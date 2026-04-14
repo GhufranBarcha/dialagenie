@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const faqs = [
     { category: "Setup", question: "How long does it take to set up?", answer: "Setup takes less than 5 minutes. We provide you with a new phone number that instantly forwards to your AI receptionist. Simply configure your business rules in our dashboard, and you are good to go." },
-    { category: "Technology", question: "Does it sound like a real person?", answer: "Yes! DialaGenie uses the latest conversational AI and ultra-realistic voice synthesis. Most callers will not even realize they are speaking to an AI. It even handles interruptions and pauses naturally." },
+    { category: "Technology", question: "Does it sound like a real person?", answer: "Yes! Dial a Genie uses the latest conversational AI and ultra-realistic voice synthesis. Most callers will not even realize they are speaking to an AI. It even handles interruptions and pauses naturally." },
     { category: "Integrations", question: "Can it integrate with my existing calendar?", answer: "Absolutely. We seamlessly integrate with Google Calendar, Outlook, Calendly, and most major CRM platforms to enable real-time booking and scheduling." },
     { category: "Technology", question: "What happens if the AI does not know the answer?", answer: "If a caller asks a question outside the configured knowledge base, it will politely take a message, gather the contact details, and immediately notify you or your team for follow-up." },
     { category: "Billing", question: "Can I cancel at any time?", answer: "Yes — no hidden contracts. All plans are month-to-month. You can cancel, upgrade, or downgrade anytime directly from your account dashboard." }

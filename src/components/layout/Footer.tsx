@@ -8,7 +8,8 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
                     <div className="col-span-1 md:col-span-2">
                         <Link href="/" className="text-3xl font-bold text-white mb-6 block">
-                            Diala<span className="text-[var(--color-accent-light)]">Genie</span>
+                            Dial <span className="text-sky-300">a</span>{" "}
+                            <span className="text-[var(--color-accent-light)]">Genie</span>
                         </Link>
                         <p className="text-slate-400 max-w-sm mb-8 text-lg">
                             Your 24/7 AI employee that never sleeps, never takes a day off, and never misses a lead.
@@ -49,7 +50,7 @@ export default function Footer() {
 
                 <div className="pt-8 border-t border-slate-900 text-center md:text-left flex flex-col md:flex-row justify-between items-center">
                     <p className="text-slate-500 text-sm">
-                        &copy; {new Date().getFullYear()} DialaGenie. All rights reserved.
+                        &copy; {new Date().getFullYear()} Dial a Genie. All rights reserved.
                     </p>
                 </div>
             </div>

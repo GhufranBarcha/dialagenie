@@ -26,7 +26,7 @@ export default function Comparison() {
                         <div className="grid grid-cols-3 bg-gray-50 border-b border-gray-200">
                             <div className="p-4 md:p-5 text-gray-400 text-[10px] md:text-xs font-bold uppercase tracking-widest">Feature</div>
                             <div className="p-4 md:p-5 text-center border-l border-gray-200 flex items-center justify-center">
-                                <span className="inline-block bg-indigo-600 text-white text-[10px] md:text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">DialaGenie AI</span>
+                                <span className="inline-block bg-indigo-600 text-white text-[10px] md:text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Dial a Genie AI</span>
                             </div>
                             <div className="p-4 md:p-5 text-center border-l border-gray-200 flex items-center justify-center">
                                 <span className="text-gray-400 text-[10px] md:text-xs font-bold uppercase tracking-wider">Human Receptionist</span>
