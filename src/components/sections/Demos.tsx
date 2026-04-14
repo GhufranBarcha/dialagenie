@@ -39,7 +39,14 @@ export default function Demos() {
                         </div>
 
                         <div className="mt-10">
-                            <Button variant="secondary" size="lg">Generate Your Own Demo</Button>
+                            <a
+                                href="https://app.dialagenie.com/register"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-block"
+                            >
+                                <Button variant="secondary" size="lg">Generate Your Own Demo</Button>
+                            </a>
                         </div>
                     </div>
 
