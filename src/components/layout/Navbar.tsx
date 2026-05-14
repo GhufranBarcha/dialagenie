@@ -23,9 +23,33 @@ export default function Navbar() {
                 <div className="flex justify-between items-center h-20">
 
                     {/* Logo */}
-                    <Link href="/" className="text-2xl font-bold text-gray-900 shrink-0">
-                        Dial <span className="text-[var(--color-accent-light)]">A</span>{" "}
-                        <span className="text-indigo-600">Genie</span>
+                    <Link href="/" aria-label="Dial A Genie home" className="inline-flex items-center gap-3 text-2xl font-bold text-gray-900 shrink-0">
+                        <svg
+                            aria-hidden="true"
+                            viewBox="0 0 64 64"
+                            className="h-12 w-16 shrink-0"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <defs>
+                                <linearGradient id="dial-a-genie-mark" x1="20" y1="58" x2="45" y2="9" gradientUnits="userSpaceOnUse">
+                                    <stop stopColor="#7C3AED" />
+                                    <stop offset="0.48" stopColor="#3B82F6" />
+                                    <stop offset="1" stopColor="#22D3EE" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M10.5 37C18.7 40.7 26.2 41.4 32 39.1C37.8 41.4 45.3 40.7 53.5 37C51.3 45.8 42.5 52.2 32 52.2C21.5 52.2 12.7 45.8 10.5 37Z" fill="url(#dial-a-genie-mark)" />
+                            <path d="M27.5 51.5H36.5L40 59H24L27.5 51.5Z" fill="url(#dial-a-genie-mark)" />
+                            <path d="M26.6 34.7C26.6 31.5 29 29.5 32 29.5C35 29.5 37.4 31.5 37.4 34.7C37.4 37.5 35 39.4 32 39.4C29 39.4 26.6 37.5 26.6 34.7Z" fill="url(#dial-a-genie-mark)" />
+                            <path d="M34.7 7.5C47.7 16.7 47.2 26.5 36.8 33.2C41.8 23.4 37.1 15.9 28.8 9.7C31.1 18.4 30.1 25.5 22.6 32.4C20.3 23.5 24.9 14.5 34.7 7.5Z" fill="url(#dial-a-genie-mark)" />
+                            <path d="M48.5 17L50.2 21.1L54.5 22.5L50.2 23.9L48.5 28L46.8 23.9L42.5 22.5L46.8 21.1L48.5 17Z" fill="#93C5FD" />
+                        </svg>
+                        <span>
+                            Dial{" "}
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-sky-500">
+                                A Genie
+                            </span>
+                        </span>
                     </Link>
 
                     {/* Desktop Nav */}

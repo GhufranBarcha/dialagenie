@@ -9,8 +9,10 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
                     <div className="col-span-1 md:col-span-2">
                         <Link href="/" className="text-3xl font-bold text-white mb-6 block">
-                            Dial <span className="text-sky-300">A</span>{" "}
-                            <span className="text-[var(--color-accent-light)]">Genie</span>
+                            Dial{" "}
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-sky-500">
+                                A Genie
+                            </span>
                         </Link>
                         <p className="text-slate-400 max-w-sm mb-8 text-lg">
                             Your 24/7 AI employee that never sleeps, never takes a day off, and never misses a lead.

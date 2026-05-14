@@ -13,6 +13,8 @@ const plans = [
         name: "Starter",
         for: "For solopreneurs",
         price: "$99",
+        billingSuffix: "/mo",
+        priceClassName: "text-4xl md:text-5xl",
         features: ["200 Mins of AI Calls", "1 Phone Number", "Email Support", "Basic Scripting"],
         highlighted: false,
         buttonVariant: "outline" as const,
@@ -22,6 +24,8 @@ const plans = [
         name: "Professional",
         for: "For growing businesses",
         price: "$249",
+        billingSuffix: "/mo",
+        priceClassName: "text-4xl md:text-5xl",
         features: ["800 Mins of AI Calls", "Calendar Integration", "Live Call Transfers", "Custom AI Voice & Persona", "Priority Support"],
         highlighted: true,
         buttonVariant: "primary" as const,
@@ -30,7 +34,10 @@ const plans = [
     {
         name: "Enterprise",
         for: "For high-volume centers",
-        price: "Custom",
+        price: "$499+",
+        customLabel: "Custom",
+        billingSuffix: "",
+        priceClassName: "text-4xl md:text-5xl",
         features: ["Unlimited AI Mins", "Multiple Phone Numbers", "API & Webhook Access", "Dedicated Success Manager", "Custom Integrations"],
         highlighted: false,
         buttonVariant: "outline" as const,
@@ -39,6 +46,8 @@ const plans = [
 ];
 
 function PricingCard({ plan }: { plan: typeof plans[0] }) {
+    const priceClassName = plan.priceClassName ?? "text-4xl md:text-5xl";
+
     if (plan.highlighted) {
         return (
             <div className="bg-gray-900 rounded-3xl p-8 shadow-2xl relative md:scale-105 border border-gray-800 z-10 flex flex-col h-full">
@@ -48,7 +57,8 @@ function PricingCard({ plan }: { plan: typeof plans[0] }) {
                 <h4 className="text-xl font-bold text-white mb-2">{plan.name}</h4>
                 <p className="text-gray-400 mb-6 font-medium text-sm md:text-base">{plan.for}</p>
                 <div className="mb-8">
-                    <p className="text-4xl md:text-5xl font-extrabold text-white">{plan.price}<span className="text-base md:text-lg text-gray-400 font-medium">{plan.price !== "Custom" ? "/mo" : ""}</span></p>
+                    <p className={`${priceClassName} whitespace-nowrap leading-none tracking-tight font-extrabold text-white`}>{plan.price}</p>
+                    {plan.customLabel && <p className="text-base md:text-lg text-gray-400 font-medium mt-1">{plan.customLabel}</p>}
                 </div>
                 <ul className="space-y-4 mb-8 flex-grow">
                     {plan.features.map((f, i) => (
@@ -67,7 +77,8 @@ function PricingCard({ plan }: { plan: typeof plans[0] }) {
             <h4 className="text-xl font-bold text-gray-900 mb-2">{plan.name}</h4>
             <p className="text-gray-500 mb-6 font-medium text-sm md:text-base">{plan.for}</p>
             <div className="mb-8">
-                <p className="text-4xl md:text-5xl font-extrabold text-gray-900">{plan.price}<span className="text-base md:text-lg text-gray-500 font-medium">{plan.price !== "Custom" ? "/mo" : ""}</span></p>
+                <p className={`${priceClassName} whitespace-nowrap leading-none tracking-tight font-extrabold text-gray-900`}>{plan.price}</p>
+                {plan.customLabel && <p className="text-base md:text-lg text-gray-500 font-medium mt-1">{plan.customLabel}</p>}
             </div>
             <ul className="space-y-4 mb-8 flex-grow">
                 {plan.features.map((f, i) => (
@@ -119,6 +130,12 @@ export default function Pricing() {
                         </Swiper>
                     </StaggerItem>
                 </StaggerContainer>
+
+                <div className="mt-10 text-center">
+                    <p className="text-sm md:text-base text-gray-500">
+                        10% off with 6-month plan, 20% off with annual plan. <em>Prices are exclusive of GST.</em>
+                    </p>
+                </div>
             </div>
         </section>
     );
