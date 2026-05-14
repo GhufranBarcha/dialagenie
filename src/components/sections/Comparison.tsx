@@ -1,4 +1,5 @@
 import { Check, X } from "lucide-react";
+import Link from "next/link";
 
 const rows = [
     { label: "Availability", ai: "24/7/365", human: "40 hrs/week" },
@@ -27,7 +28,7 @@ export default function Comparison() {
                         <div className="grid grid-cols-3 bg-gray-50 border-b border-gray-200">
                             <div className="p-4 md:p-5 text-gray-400 text-[10px] md:text-xs font-bold uppercase tracking-widest">Feature</div>
                             <div className="p-4 md:p-5 text-center border-l border-gray-200 flex items-center justify-center">
-                                <span className="inline-block bg-indigo-600 text-white text-[10px] md:text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Dial a Genie</span>
+                                <span className="inline-block bg-indigo-600 text-white text-[10px] md:text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Dial A Genie</span>
                             </div>
                             <div className="p-4 md:p-5 text-center border-l border-gray-200 flex items-center justify-center">
                                 <span className="text-gray-400 text-[10px] md:text-xs font-bold uppercase tracking-wider">Human Receptionist</span>
@@ -59,7 +60,7 @@ export default function Comparison() {
                 </div>
 
                 <div className="mt-8 text-center">
-                    <p className="text-gray-400 font-medium">The math is simple. <a href="#pricing" className="text-indigo-600 hover:text-indigo-500 font-semibold transition-colors">See our pricing →</a></p>
+                    <p className="text-gray-400 font-medium">The math is simple. <Link href="#pricing" className="text-indigo-600 hover:text-indigo-500 font-semibold transition-colors">See our pricing →</Link></p>
                 </div>
             </div>
         </section>

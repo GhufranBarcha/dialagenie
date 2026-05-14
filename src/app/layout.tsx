@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dial a Genie | 24/7 AI Receptionist for Businesses",
-  description: "Dial a Genie is your AI-powered 24/7 virtual receptionist. Never miss a call again. Automate bookings, answer FAQs, and capture leads around the clock. No training required.",
+  title: "Dial A Genie | 24/7 AI Receptionist for Businesses",
+  description: "Dial A Genie is your AI-powered 24/7 virtual receptionist. Never miss a call again. Automate bookings, answer FAQs, and capture leads around the clock. No training required.",
   keywords: [
     "AI receptionist",
     "virtual receptionist",
@@ -26,27 +26,27 @@ export const metadata: Metadata = {
     "AI appointment booking",
     "missed call solution",
     "business phone AI",
-    "Dial a Genie",
+    "Dial A Genie",
     "conversational AI receptionist",
     "AI customer service",
     "automated call handling",
   ],
-  authors: [{ name: "Dial a Genie" }],
-  creator: "Dial a Genie",
+  authors: [{ name: "Dial A Genie" }],
+  creator: "Dial A Genie",
   metadataBase: new URL("https://www.dialagenie.com"),
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Dial a Genie | 24/7 AI Receptionist for Businesses",
-    description: "Never miss a call again. Dial a Genie's AI receptionist answers calls, books appointments, and qualifies leads around the clock — no human needed.",
+    title: "Dial A Genie | 24/7 AI Receptionist for Businesses",
+    description: "Never miss a call again. Dial A Genie's AI receptionist answers calls, books appointments, and qualifies leads around the clock — no human needed.",
     url: "https://www.dialagenie.com",
-    siteName: "Dial a Genie",
+    siteName: "Dial A Genie",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dial a Genie | 24/7 AI Receptionist for Businesses",
-    description: "Never miss a call again. Dial a Genie's AI receptionist answers calls, books appointments, and qualifies leads 24/7.",
+    title: "Dial A Genie | 24/7 AI Receptionist for Businesses",
+    description: "Never miss a call again. Dial A Genie's AI receptionist answers calls, books appointments, and qualifies leads 24/7.",
     creator: "@dialagenie",
   },
   robots: {

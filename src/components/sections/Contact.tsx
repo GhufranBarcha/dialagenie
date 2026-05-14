@@ -1,6 +1,5 @@
-"use client";
-
-import { Mail, PhoneCall, Clock3, ArrowRight } from "lucide-react";
+import { Mail, PhoneCall, Clock3 } from "lucide-react";
+import ContactForm from "./ContactForm";
 
 export default function Contact() {
     return (
@@ -18,8 +17,8 @@ export default function Contact() {
 
                     <div className="lg:col-span-2 space-y-5">
                         {[
-                            { icon: <Mail className="w-5 h-5 text-indigo-600" />, label: "Email us", value: "hello@dialagenie.com", href: "mailto:hello@dialagenie.com" },
-                            { icon: <PhoneCall className="w-5 h-5 text-indigo-600" />, label: "Call us", value: "+1 (234) 567-890", href: "tel:+12345678" },
+                            { icon: <Mail className="w-5 h-5 text-indigo-600" />, label: "Email us", value: "info@dialagenie.com", href: "mailto:info@dialagenie.com" },
+                            { icon: <PhoneCall className="w-5 h-5 text-indigo-600" />, label: "Call us", value: "+64 21 338 986", href: "tel:+6421338986" },
                             { icon: <Clock3 className="w-5 h-5 text-indigo-600" />, label: "Response time", value: "We reply within 24 hours", href: null }
                         ].map((item, i) => (
                             <div key={i} className="bg-white border border-gray-200 rounded-2xl p-6 flex items-center gap-5 hover:shadow-md hover:border-indigo-200 transition-all">
@@ -44,34 +43,7 @@ export default function Contact() {
                     <div className="lg:col-span-3">
                         <div className="bg-white border border-gray-200 rounded-3xl p-8 md:p-10 shadow-sm">
                             <h3 className="text-2xl font-bold text-gray-900 mb-8">Send us a message</h3>
-                            <form className="space-y-5">
-                                <div className="grid sm:grid-cols-2 gap-4">
-                                    <div>
-                                        <label htmlFor="first_name" className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 block">First Name</label>
-                                        <input type="text" id="first_name" autoComplete="given-name" placeholder="John" className="w-full px-4 py-3.5 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all font-medium" />
-                                    </div>
-                                    <div>
-                                        <label htmlFor="last_name" className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 block">Last Name</label>
-                                        <input type="text" id="last_name" autoComplete="family-name" placeholder="Smith" className="w-full px-4 py-3.5 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all font-medium" />
-                                    </div>
-                                </div>
-                                <div>
-                                    <label htmlFor="email" className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 block">Work Email</label>
-                                    <input type="email" id="email" autoComplete="email" placeholder="john@company.com" className="w-full px-4 py-3.5 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all font-medium" />
-                                </div>
-                                <div>
-                                    <label htmlFor="company" className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 block">Company Name</label>
-                                    <input type="text" id="company" autoComplete="organization" placeholder="Your Business" className="w-full px-4 py-3.5 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all font-medium" />
-                                </div>
-                                <div>
-                                    <label htmlFor="message" className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 block">Message</label>
-                                    <textarea id="message" placeholder="Tell us about your business and what you need..." rows={4} className="w-full px-4 py-3.5 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all font-medium resize-none" />
-                                </div>
-                                <button type="submit" className="w-full h-14 bg-indigo-600 hover:bg-indigo-700 active:scale-[0.98] text-white font-bold text-lg rounded-xl flex items-center justify-center gap-3 transition-all duration-200 shadow-lg shadow-indigo-200">
-                                    Request Your Demo <ArrowRight className="w-5 h-5" />
-                                </button>
-                                <p className="text-gray-400 text-sm text-center font-medium">No credit card required. No contracts.</p>
-                            </form>
+                            <ContactForm />
                         </div>
                     </div>
 

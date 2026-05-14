@@ -24,7 +24,7 @@ export default function Navbar() {
 
                     {/* Logo */}
                     <Link href="/" className="text-2xl font-bold text-gray-900 shrink-0">
-                        Dial <span className="text-[var(--color-accent-light)]">a</span>{" "}
+                        Dial <span className="text-[var(--color-accent-light)]">A</span>{" "}
                         <span className="text-indigo-600">Genie</span>
                     </Link>
 

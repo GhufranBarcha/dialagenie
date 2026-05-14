@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, PhoneCall } from "lucide-react";
-import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function Hero() {
     return (

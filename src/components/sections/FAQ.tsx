@@ -1,11 +1,12 @@
 "use client";
 
 import { Plus, Minus } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
 const faqs = [
     { category: "Setup", question: "How long does it take to set up?", answer: "Setup takes less than 5 minutes. We provide you with a new phone number that instantly forwards to your AI receptionist. Simply configure your business rules in our dashboard, and you are good to go." },
-    { category: "Technology", question: "Does it sound like a real person?", answer: "Yes! Dial a Genie uses the latest conversational AI and ultra-realistic voice synthesis. Most callers will not even realize they are speaking to an AI. It even handles interruptions and pauses naturally." },
+    { category: "Technology", question: "Does it sound like a real person?", answer: "Yes! Dial A Genie uses the latest conversational AI and ultra-realistic voice synthesis. Most callers will not even realize they are speaking to an AI. It even handles interruptions and pauses naturally." },
     { category: "Integrations", question: "Can it integrate with my existing calendar?", answer: "Absolutely. We seamlessly integrate with Google Calendar, Outlook, Calendly, and most major CRM platforms to enable real-time booking and scheduling." },
     { category: "Technology", question: "What happens if the AI does not know the answer?", answer: "If a caller asks a question outside the configured knowledge base, it will politely take a message, gather the contact details, and immediately notify you or your team for follow-up." },
     { category: "Billing", question: "Can I cancel at any time?", answer: "Yes — no hidden contracts. All plans are month-to-month. You can cancel, upgrade, or downgrade anytime directly from your account dashboard." },
@@ -23,9 +24,9 @@ export default function FAQ() {
                         <p className="text-indigo-600 font-semibold tracking-widest uppercase text-xs mb-4">Got Questions?</p>
                         <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6">We have <br /> the answers.</h2>
                         <p className="text-gray-500 text-lg leading-relaxed mb-8">Everything you need to know before getting started. Still have a question?</p>
-                        <a href="#contact" className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-500 font-semibold transition-colors group">
+                        <Link href="#contact" className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-500 font-semibold transition-colors group">
                             Talk to our team <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="lg:col-span-3 space-y-3">

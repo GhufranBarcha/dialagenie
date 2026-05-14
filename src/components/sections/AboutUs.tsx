@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { CheckCircle2, Users, PhoneCall } from "lucide-react";
 
 const stats = [
@@ -41,7 +42,7 @@ export default function AboutUs() {
                             {"We're"} redefining how businesses communicate.
                         </h2>
                         <p className="text-gray-500 text-lg leading-relaxed mb-10">
-                            At Dial a Genie, we believe every missed call is a missed opportunity. Our mission is to equip growing businesses with enterprise-grade AI receptionist workflows that are practical, accessible, and easy to deploy.
+                            At Dial A Genie, we believe every missed call is a missed opportunity. Our mission is to equip growing businesses with enterprise-grade AI receptionist workflows that are practical, accessible, and easy to deploy.
                         </p>
 
                         <ul className="space-y-4 mb-12">
@@ -57,9 +58,9 @@ export default function AboutUs() {
                             ))}
                         </ul>
 
-                        <a href="#contact" className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-8 py-4 rounded-full transition-all duration-200 shadow-lg shadow-indigo-200 active:scale-[0.98]">
+                        <Link href="#contact" className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-8 py-4 rounded-full transition-all duration-200 shadow-lg shadow-indigo-200 active:scale-[0.98]">
                             Get Started Today →
-                        </a>
+                        </Link>
                     </div>
 
                 </div>
