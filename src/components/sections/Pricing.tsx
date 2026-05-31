@@ -35,10 +35,9 @@ const plans = [
         name: "Enterprise",
         for: "For high-volume centers",
         price: "$499+",
-        customLabel: "Custom",
         billingSuffix: "",
         priceClassName: "text-4xl md:text-5xl",
-        features: ["Unlimited AI Mins", "Multiple Phone Numbers", "API & Webhook Access", "Dedicated Success Manager", "Custom Integrations"],
+        features: ["Custom Pricing", "Unlimited AI Mins", "Multiple Phone Numbers", "API & Webhook Access", "Dedicated Success Manager", "Custom Integrations"],
         highlighted: false,
         buttonVariant: "outline" as const,
         buttonText: "Contact Sales"
@@ -54,11 +53,10 @@ function PricingCard({ plan }: { plan: typeof plans[0] }) {
                 <div className="absolute top-0 right-8 transform -translate-y-1/2">
                     <span className="bg-indigo-600 text-white text-[10px] md:text-xs font-bold px-3 md:px-4 py-1.5 rounded-full uppercase tracking-wide shadow-lg">Most Popular</span>
                 </div>
-                <h4 className="text-xl font-bold text-white mb-2">{plan.name}</h4>
+                <h4 className="text-xl font-bold text-white mb-2 min-w-[120px]">{plan.name}</h4>
                 <p className="text-gray-400 mb-6 font-medium text-sm md:text-base">{plan.for}</p>
                 <div className="mb-8">
                     <p className={`${priceClassName} whitespace-nowrap leading-none tracking-tight font-extrabold text-white`}>{plan.price}</p>
-                    {plan.customLabel && <p className="text-base md:text-lg text-gray-400 font-medium mt-1">{plan.customLabel}</p>}
                 </div>
                 <ul className="space-y-4 mb-8 flex-grow">
                     {plan.features.map((f, i) => (
@@ -74,11 +72,10 @@ function PricingCard({ plan }: { plan: typeof plans[0] }) {
 
     return (
         <div className="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm hover:shadow-xl transition-shadow flex flex-col h-full">
-            <h4 className="text-xl font-bold text-gray-900 mb-2">{plan.name}</h4>
+            <h4 className="text-xl font-bold text-gray-900 mb-2 min-w-[120px]">{plan.name}</h4>
             <p className="text-gray-500 mb-6 font-medium text-sm md:text-base">{plan.for}</p>
             <div className="mb-8">
                 <p className={`${priceClassName} whitespace-nowrap leading-none tracking-tight font-extrabold text-gray-900`}>{plan.price}</p>
-                {plan.customLabel && <p className="text-base md:text-lg text-gray-500 font-medium mt-1">{plan.customLabel}</p>}
             </div>
             <ul className="space-y-4 mb-8 flex-grow">
                 {plan.features.map((f, i) => (
