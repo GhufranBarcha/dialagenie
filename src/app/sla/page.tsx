@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
@@ -10,7 +11,8 @@ export const metadata: Metadata = {
 export default function SLAPage() {
     return (
         <main className="min-h-screen overflow-x-hidden bg-white">
-            <section className="py-24">
+            <Navbar />
+            <section className="pt-32 pb-24 lg:pt-48">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-indigo-600 font-semibold tracking-wider uppercase text-xs md:text-sm mb-3">Legal</h2>
