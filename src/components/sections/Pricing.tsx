@@ -50,7 +50,7 @@ function PricingCard({ plan }: { plan: typeof plans[0] }) {
     if (plan.highlighted) {
         return (
             <div className="bg-gray-900 rounded-3xl p-8 shadow-2xl relative md:scale-105 border border-gray-800 z-10 flex flex-col h-full">
-                <div className="absolute top-0 right-8 transform -translate-y-1/2">
+                <div className="absolute top-3 right-6 md:top-0 md:right-8 md:transform md:-translate-y-1/2">
                     <span className="bg-indigo-600 text-white text-[10px] md:text-xs font-bold px-3 md:px-4 py-1.5 rounded-full uppercase tracking-wide shadow-lg">Most Popular</span>
                 </div>
                 <h4 className="text-xl font-bold text-white mb-2 min-w-[120px]">{plan.name}</h4>
