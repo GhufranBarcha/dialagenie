@@ -4,7 +4,7 @@ import Link from "next/link";
 const rows = [
     { label: "Availability", ai: "24/7/365", human: "40 hrs/week" },
     { label: "Monthly Cost", ai: "Flat low fee", human: "$3,500–$5,000+" },
-    { label: "Call Capacity", ai: "Unlimited, always", human: "One call at a time" },
+    { label: "Call Capacity", ai: "Unlimited", human: "One call at a time" },
     { label: "Training Required", ai: "None", human: "Weeks" },
     { label: "Call Scripting", ai: "100% consistent", human: "Can have off days" },
     { label: "Lead Qualification", ai: "Every single call", human: "Inconsistent" },

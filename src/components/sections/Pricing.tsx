@@ -13,7 +13,7 @@ const plans = [
         name: "Starter",
         for: "For solopreneurs",
         price: "$99",
-        billingSuffix: "/mo",
+        billingSuffix: "per month",
         priceClassName: "text-4xl md:text-5xl",
         features: ["200 Mins of AI Calls", "1 Phone Number", "Email Support", "Basic Scripting"],
         highlighted: false,
@@ -24,7 +24,7 @@ const plans = [
         name: "Professional",
         for: "For growing businesses",
         price: "$249",
-        billingSuffix: "/mo",
+        billingSuffix: "per month",
         priceClassName: "text-4xl md:text-5xl",
         features: ["800 Mins of AI Calls", "Calendar Integration", "Live Call Transfers", "Custom AI Voice & Persona", "Priority Support"],
         highlighted: true,
@@ -35,7 +35,7 @@ const plans = [
         name: "Enterprise",
         for: "For high-volume centers",
         price: "$499+",
-        billingSuffix: "",
+        billingSuffix: "per month",
         priceClassName: "text-4xl md:text-5xl",
         features: ["Custom Pricing", "Unlimited AI Mins", "Multiple Phone Numbers", "API & Webhook Access", "Dedicated Success Manager", "Custom Integrations"],
         highlighted: false,
@@ -56,7 +56,8 @@ function PricingCard({ plan }: { plan: typeof plans[0] }) {
                 <h4 className="text-xl font-bold text-white mb-2 min-w-[120px]">{plan.name}</h4>
                 <p className="text-gray-400 mb-6 font-medium text-sm md:text-base">{plan.for}</p>
                 <div className="mb-8">
-                    <p className={`${priceClassName} whitespace-nowrap leading-none tracking-tight font-extrabold text-white`}>{plan.price}</p>
+                    <p className={`${priceClassName} whitespace-nowrap leading-none tracking-tight font-extrabold text-white`}>{plan.price}<sup className="ml-1 text-xl md:text-2xl">*</sup></p>
+                    {plan.billingSuffix && <p className="text-sm text-gray-400 font-medium">per month</p>}
                 </div>
                 <ul className="space-y-4 mb-8 flex-grow">
                     {plan.features.map((f, i) => (
@@ -75,7 +76,8 @@ function PricingCard({ plan }: { plan: typeof plans[0] }) {
             <h4 className="text-xl font-bold text-gray-900 mb-2 min-w-[120px]">{plan.name}</h4>
             <p className="text-gray-500 mb-6 font-medium text-sm md:text-base">{plan.for}</p>
             <div className="mb-8">
-                <p className={`${priceClassName} whitespace-nowrap leading-none tracking-tight font-extrabold text-gray-900`}>{plan.price}</p>
+                <p className={`${priceClassName} whitespace-nowrap leading-none tracking-tight font-extrabold text-gray-900`}>{plan.price}<sup className="ml-1 text-xl md:text-2xl">*</sup></p>
+                {plan.billingSuffix && <p className="text-sm text-gray-400 font-medium">per month</p>}
             </div>
             <ul className="space-y-4 mb-8 flex-grow">
                 {plan.features.map((f, i) => (
@@ -128,9 +130,12 @@ export default function Pricing() {
                     </StaggerItem>
                 </StaggerContainer>
 
-                <div className="mt-10 text-center">
+                <div className="mt-10 text-center max-w-3xl mx-auto space-y-3">
                     <p className="text-sm md:text-base text-gray-500">
                         10% off with 6-month plan, 20% off with annual plan. <em>Prices are exclusive of GST.</em>
+                    </p>
+                    <p className="text-sm md:text-base text-gray-500">
+                        * All plans include a one-time Setup fee of $199 (ex. GST).
                     </p>
                 </div>
             </div>
