@@ -119,7 +119,7 @@ export default function Pricing() {
                             centeredSlides
                             initialSlide={1}
                             pagination={{ clickable: true }}
-                            className="pb-12"
+                            className="pt-6 pb-12"
                         >
                             {plans.map((plan, i) => (
                                 <SwiperSlide key={i} className="h-auto">
