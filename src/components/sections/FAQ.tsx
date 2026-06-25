@@ -24,7 +24,7 @@ export default function FAQ() {
                         <p className="text-indigo-600 font-semibold tracking-widest uppercase text-xs mb-4">Got Questions?</p>
                         <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6">We have <br /> the answers.</h2>
                         <p className="text-gray-500 text-lg leading-relaxed mb-8">Everything you need to know before getting started. Still have a question?</p>
-                        <Link href="#contact" className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-500 font-semibold transition-colors group">
+                        <Link href="/#contact" className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-500 font-semibold transition-colors group">
                             Talk to our team <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
                         </Link>
                     </div>

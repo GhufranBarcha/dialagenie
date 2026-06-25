@@ -6,12 +6,12 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-    { href: "#about", label: "About" },
-    { href: "#features", label: "Features" },
-    { href: "#demos", label: "Demos" },
-    { href: "#how-it-works", label: "How It Works" },
-    { href: "#pricing", label: "Pricing" },
-    { href: "#faq", label: "FAQ" },
+    { href: "/#about", label: "About" },
+    { href: "/#features", label: "Features" },
+    { href: "/#demos", label: "Demos" },
+    { href: "/#how-it-works", label: "How It Works" },
+    { href: "/#pricing", label: "Pricing" },
+    { href: "/#faq", label: "FAQ" },
 ];
 
 export default function Navbar() {
@@ -63,10 +63,12 @@ export default function Navbar() {
 
                     {/* Desktop CTA */}
                     <div className="hidden md:flex items-center gap-3">
-                        <Button variant="ghost">Log in</Button>
-                        <Link href="#contact">
+                        <a href="https://app.dialagenie.com/login" target="_blank" rel="noopener noreferrer">
+                            <Button variant="ghost">Log in</Button>
+                        </a>
+                        <a href="https://app.dialagenie.com/register" target="_blank" rel="noopener noreferrer">
                             <Button variant="primary">Get a Demo</Button>
-                        </Link>
+                        </a>
                     </div>
 
                     {/* Mobile Hamburger */}
@@ -95,10 +97,12 @@ export default function Navbar() {
                         </Link>
                     ))}
                     <div className="pt-4 flex flex-col gap-3">
-                        <Button variant="outline" size="lg" className="w-full">Log in</Button>
-                        <Link href="#contact" onClick={() => setMobileOpen(false)}>
+                        <a href="https://app.dialagenie.com/login" target="_blank" rel="noopener noreferrer" className="w-full">
+                            <Button variant="outline" size="lg" className="w-full">Log in</Button>
+                        </a>
+                        <a href="https://app.dialagenie.com/register" target="_blank" rel="noopener noreferrer" className="w-full" onClick={() => setMobileOpen(false)}>
                             <Button variant="primary" size="lg" className="w-full">Get a Demo</Button>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>

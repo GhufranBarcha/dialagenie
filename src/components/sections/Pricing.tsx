@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -66,7 +67,15 @@ function PricingCard({ plan }: { plan: typeof plans[0] }) {
                         </li>
                     ))}
                 </ul>
-                <Button variant={plan.buttonVariant} size="lg" className="w-full bg-indigo-600 hover:bg-indigo-500 font-bold text-white border-0">{plan.buttonText}</Button>
+                {plan.name === "Enterprise" ? (
+                    <Link href="/#contact" className="w-full mt-auto block">
+                        <Button variant={plan.buttonVariant} size="lg" className="w-full bg-indigo-600 hover:bg-indigo-500 font-bold text-white border-0">{plan.buttonText}</Button>
+                    </Link>
+                ) : (
+                    <a href="https://app.dialagenie.com/subscribe" target="_blank" rel="noopener noreferrer" className="w-full mt-auto block">
+                        <Button variant={plan.buttonVariant} size="lg" className="w-full bg-indigo-600 hover:bg-indigo-500 font-bold text-white border-0">{plan.buttonText}</Button>
+                    </a>
+                )}
             </div>
         );
     }
@@ -86,7 +95,15 @@ function PricingCard({ plan }: { plan: typeof plans[0] }) {
                     </li>
                 ))}
             </ul>
-            <Button variant={plan.buttonVariant} size="lg" className="w-full font-bold">{plan.buttonText}</Button>
+            {plan.name === "Enterprise" ? (
+                <Link href="/#contact" className="w-full mt-auto block">
+                    <Button variant={plan.buttonVariant} size="lg" className="w-full font-bold">{plan.buttonText}</Button>
+                </Link>
+            ) : (
+                <a href="https://app.dialagenie.com/subscribe" target="_blank" rel="noopener noreferrer" className="w-full mt-auto block">
+                    <Button variant={plan.buttonVariant} size="lg" className="w-full font-bold">{plan.buttonText}</Button>
+                </a>
+            )}
         </div>
     );
 }

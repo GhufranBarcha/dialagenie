@@ -58,9 +58,14 @@ export default function AboutUs() {
                             ))}
                         </ul>
 
-                        <Link href="#contact" className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-8 py-4 rounded-full transition-all duration-200 shadow-lg shadow-indigo-200 active:scale-[0.98]">
+                        <a
+                            href="https://app.dialagenie.com/register"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-8 py-4 rounded-full transition-all duration-200 shadow-lg shadow-indigo-200 active:scale-[0.98]"
+                        >
                             Get Started Today →
-                        </Link>
+                        </a>
                     </div>
 
                 </div>

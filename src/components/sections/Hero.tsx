@@ -31,10 +31,17 @@ export default function Hero() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 sm:px-0">
-                    <Button variant="primary" size="lg" className="w-full sm:w-auto gap-2 group">
-                        See it in Action <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    </Button>
-                    <Link href="#contact" className="w-full sm:w-auto">
+                    <a
+                        href="https://app.dialagenie.com/register"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full sm:w-auto"
+                    >
+                        <Button variant="primary" size="lg" className="w-full sm:w-auto gap-2 group">
+                            See it in Action <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                        </Button>
+                    </a>
+                    <Link href="/#contact" className="w-full sm:w-auto">
                         <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2">
                             <PhoneCall className="w-5 h-5" /> {"Let's"} Chat
                         </Button>
