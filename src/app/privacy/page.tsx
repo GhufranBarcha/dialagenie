@@ -22,7 +22,7 @@ export default function PrivacyPage() {
 
                     <div className="max-w-none text-gray-600 space-y-10">
                         <p className="text-base md:text-lg leading-relaxed">
-                            This Privacy Policy explains how Lorem Herba Limited ("we," "us," or "our") collects, uses, discloses, and protects personal information in connection with the "Dial A Genie" AI voice receptionist Service (the "Service"). We are committed to complying with the New Zealand Privacy Act 2020 and the Australian Privacy Act 1988 (including the Australian Privacy Principles or "APPs").
+                            This Privacy Policy explains how Lorem Herba Limited (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) collects, uses, discloses, and protects personal information in connection with the &quot;Dial A Genie&quot; AI voice receptionist Service (the &quot;Service&quot;). We are committed to complying with the New Zealand Privacy Act 2020 and the Australian Privacy Act 1988 (including the Australian Privacy Principles or &quot;APPs&quot;).
                         </p>
                         <p className="text-base md:text-lg leading-relaxed">
                             This Policy applies to personal information collected from or about you as a user of the Service, including business owners, employees, and callers interacting with configured AI agents.
@@ -38,7 +38,7 @@ export default function PrivacyPage() {
                                 <li><strong className="text-gray-900">Usage Data:</strong> Logs, analytics (e.g., call volume, resolution rates).</li>
                                 <li><strong className="text-gray-900">Device Data:</strong> IP addresses, browser types for dashboard access.</li>
                             </ul>
-                            <p className="mt-4"><strong className="text-gray-900">For calls:</strong> We may record/transcribe for quality and training, with disclosure in greetings (e.g., "This call may be recorded").</p>
+                            <p className="mt-4"><strong className="text-gray-900">For calls:</strong> We may record/transcribe for quality and training, with disclosure in greetings (e.g., &quot;This call may be recorded&quot;).</p>
                             <p className="mt-2 text-sm text-gray-500"><em>In Australia: Collection complies with APP 3 (solicited, necessary); in NZ: Information Privacy Principles (IPPs) 1–4.</em></p>
                         </section>
 
@@ -85,7 +85,7 @@ export default function PrivacyPage() {
 
                         <section>
                             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">7. Children</h2>
-                            <p>Service not for under 18; no children's data collected knowingly.</p>
+                            <p>Service not for under 18; no children&apos;s data collected knowingly.</p>
                         </section>
 
                         <section>

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { CheckCircle2, Users, PhoneCall } from "lucide-react";
 
 const stats = [

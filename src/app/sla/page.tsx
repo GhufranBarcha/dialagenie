@@ -22,7 +22,7 @@ export default function SLAPage() {
 
                     <div className="max-w-none text-gray-600 space-y-10">
                         <p className="text-base md:text-lg leading-relaxed">
-                            This Service Level Agreement ("SLA") is incorporated into the Terms of Use between Lorem Herba Limited ("we," "us," or "our") and you ("User" or "you"). It applies to the "Dial A Genie" AI voice receptionist service (the "Service"). Capitalized terms not defined here have the meaning in the Terms.
+                            This Service Level Agreement (&quot;SLA&quot;) is incorporated into the Terms of Use between Lorem Herba Limited (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) and you (&quot;User&quot; or &quot;you&quot;). It applies to the &quot;Dial A Genie&quot; AI voice receptionist service (the &quot;Service&quot;). Capitalized terms not defined here have the meaning in the Terms.
                         </p>
 
                         <section>
@@ -68,11 +68,11 @@ export default function SLAPage() {
 
                             <h3 className="text-xl font-bold text-gray-900 mb-2 mt-6">4.1 Service Credits</h3>
                             <p>If Monthly Uptime is significantly impeded, service credits can be applied for on a case-by-case basis.</p>
-                            <p className="mt-2">Credits apply to the next invoice or, if no renewal, as a refund. Maximum credits: 100% of one month's fees. Claim within 30 days of the affected month.</p>
+                            <p className="mt-2">Credits apply to the next invoice or, if no renewal, as a refund. Maximum credits: 100% of one month&apos;s fees. Claim within 30 days of the affected month.</p>
                             <p className="mt-2">Service credits will not apply where downtime results from upstream provider failures, force majeure events, or industry-wide infrastructure incidents beyond our reasonable control.</p>
 
                             <h3 className="text-xl font-bold text-gray-900 mb-2 mt-6">4.2 Termination Right</h3>
-                            <p>If uptime is significantly impacted for 3 consecutive months, you may terminate with 14 days' notice and receive a pro-rated refund.</p>
+                            <p>If uptime is significantly impacted for 3 consecutive months, you may terminate with 14 days&apos; notice and receive a pro-rated refund.</p>
 
                             <h3 className="text-xl font-bold text-gray-900 mb-2 mt-6">4.3 Sole Remedy</h3>
                             <p>These credits are your exclusive remedy for SLA breaches, to the extent permitted by law (e.g., no exclusion of Australian Consumer Law remedies).</p>
@@ -82,7 +82,7 @@ export default function SLAPage() {
                             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">5. Exclusions and Limitations</h2>
                             <ul className="list-disc pl-6 space-y-2">
                                 <li>No remedies for breaches due to your misuse, unauthorized modifications, or non-payment.</li>
-                                <li>We may update this SLA with 30 days' notice; continued use constitutes acceptance.</li>
+                                <li>We may update this SLA with 30 days&apos; notice; continued use constitutes acceptance.</li>
                             </ul>
                         </section>
 
