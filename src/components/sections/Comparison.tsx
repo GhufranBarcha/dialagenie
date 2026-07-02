@@ -60,7 +60,7 @@ export default function Comparison() {
                 </div>
 
                 <div className="mt-8 text-center">
-                    <p className="text-gray-400 font-medium">The math is simple. <Link href="#pricing" className="text-indigo-600 hover:text-indigo-500 font-semibold transition-colors">See our pricing →</Link></p>
+                    <p className="text-gray-400 font-medium">The math is simple. <Link href="/#pricing" className="text-indigo-600 hover:text-indigo-500 font-semibold transition-colors">See our pricing →</Link></p>
                 </div>
             </div>
         </section>

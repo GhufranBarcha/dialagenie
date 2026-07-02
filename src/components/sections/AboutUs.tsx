@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { CheckCircle2, Users, PhoneCall } from "lucide-react";
 
 const stats = [
@@ -16,8 +15,16 @@ export default function AboutUs() {
                     <div className="relative">
                         <div className="absolute inset-0 bg-gradient-to-tr from-indigo-100 to-sky-100 opacity-60 blur-3xl rounded-full" />
                         <div className="relative rounded-3xl overflow-hidden border border-gray-100 aspect-square shadow-2xl">
-                            <Image src="/about_us_ai.png" alt="AI and Human Collaboration" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
-                            <div className="absolute inset-0 bg-gradient-to-t from-white/50 via-transparent to-transparent" />
+                            <video
+                                src="/The_Explainer__Dial_A_Genie.mp4"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                aria-label="AI and Human Collaboration Explainer Video"
+                                className="w-full h-full object-cover"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-white/50 via-transparent to-transparent pointer-events-none" />
                         </div>
 
                         <div className="absolute bottom-6 left-6 right-6 bg-white/80 backdrop-blur-xl border border-gray-200 rounded-2xl px-6 py-4 flex items-center justify-between gap-4 shadow-lg">
