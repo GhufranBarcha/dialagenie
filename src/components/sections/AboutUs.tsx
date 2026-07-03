@@ -24,13 +24,8 @@ export default function AboutUs() {
                             onMouseEnter={() => {
                                 setIsHovered(true);
                                 if (videoRef.current) {
-                                    videoRef.current.play().catch(() => {
-                                        // Browser blocked unmuted autoplay. Fallback to muted playback.
-                                        if (videoRef.current) {
-                                            videoRef.current.muted = true;
-                                            videoRef.current.play().catch(() => {});
-                                        }
-                                    });
+                                    videoRef.current.muted = false;
+                                    videoRef.current.play().catch(() => {});
                                 }
                             }}
                             onMouseLeave={() => {
