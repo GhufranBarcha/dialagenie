@@ -1,3 +1,6 @@
+"use client";
+
+import { useRef, useState } from "react";
 import { CheckCircle2, Users, PhoneCall } from "lucide-react";
 
 const stats = [
@@ -7,22 +10,42 @@ const stats = [
 ];
 
 export default function AboutUs() {
+    const videoRef = useRef<HTMLVideoElement>(null);
+    const [isHovered, setIsHovered] = useState(false);
+
     return (
         <section id="about" className="py-28 bg-white overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
 
                     <div className="relative">
-                        <div className="absolute inset-0 bg-gradient-to-tr from-indigo-100 to-sky-100 opacity-60 blur-3xl rounded-full" />
-                        <div className="relative rounded-3xl overflow-hidden border border-gray-100 aspect-square shadow-2xl">
+                        <div 
+                            className="relative rounded-3xl overflow-hidden border border-gray-100 aspect-square shadow-2xl bg-white flex items-center justify-center"
+                            onMouseEnter={() => {
+                                setIsHovered(true);
+                                if (videoRef.current) {
+                                    videoRef.current.play().catch(() => {
+                                        // Browser blocked unmuted autoplay. Fallback to muted playback.
+                                        if (videoRef.current) {
+                                            videoRef.current.muted = true;
+                                            videoRef.current.play().catch(() => {});
+                                        }
+                                    });
+                                }
+                            }}
+                            onMouseLeave={() => {
+                                setIsHovered(false);
+                                videoRef.current?.pause();
+                            }}
+                        >
                             <video
+                                ref={videoRef}
                                 src="/The_Explainer__Dial_A_Genie.mp4"
-                                autoPlay
                                 loop
-                                muted
+                                controls={isHovered}
                                 playsInline
                                 aria-label="AI and Human Collaboration Explainer Video"
-                                className="w-full h-full object-cover"
+                                className="w-full aspect-video object-contain"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-white/50 via-transparent to-transparent pointer-events-none" />
                         </div>
