@@ -12,6 +12,7 @@ const stats = [
 export default function AboutUs() {
     const videoRef = useRef<HTMLVideoElement>(null);
     const [isHovered, setIsHovered] = useState(false);
+    const [hasAutoplayed, setHasAutoplayed] = useState(false);
 
     return (
         <section id="about" className="py-28 bg-white overflow-hidden">
@@ -23,20 +24,19 @@ export default function AboutUs() {
                             className="relative rounded-3xl overflow-hidden border border-gray-100 shadow-2xl bg-white pb-32"
                             onMouseEnter={() => {
                                 setIsHovered(true);
-                                if (videoRef.current) {
-                                    videoRef.current.muted = false;
+                                if (videoRef.current && !hasAutoplayed) {
+                                    videoRef.current.muted = true;
                                     videoRef.current.play().catch(() => {});
+                                    setHasAutoplayed(true);
                                 }
                             }}
                             onMouseLeave={() => {
                                 setIsHovered(false);
-                                videoRef.current?.pause();
                             }}
                         >
                             <video
                                 ref={videoRef}
                                 src="/The_Explainer__Dial_A_Genie.mp4"
-                                loop
                                 controls={isHovered}
                                 playsInline
                                 aria-label="AI and Human Collaboration Explainer Video"
