@@ -20,7 +20,7 @@ export default function AboutUs() {
 
                     <div className="relative">
                         <div 
-                            className="relative rounded-3xl overflow-hidden border border-gray-100 aspect-square shadow-2xl bg-white flex items-center justify-center"
+                            className="relative rounded-3xl overflow-hidden border border-gray-100 shadow-2xl bg-white pb-32"
                             onMouseEnter={() => {
                                 setIsHovered(true);
                                 if (videoRef.current) {
@@ -40,7 +40,7 @@ export default function AboutUs() {
                                 controls={isHovered}
                                 playsInline
                                 aria-label="AI and Human Collaboration Explainer Video"
-                                className="w-full aspect-video object-contain"
+                                className="w-full aspect-video object-cover block"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-white/50 via-transparent to-transparent pointer-events-none" />
                         </div>
