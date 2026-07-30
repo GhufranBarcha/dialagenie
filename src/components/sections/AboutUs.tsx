@@ -14,6 +14,13 @@ export default function AboutUs() {
     const [isHovered, setIsHovered] = useState(false);
     const [hasAutoplayed, setHasAutoplayed] = useState(false);
 
+    const handleVideoEnded = () => {
+        if (videoRef.current) {
+            videoRef.current.currentTime = 0;
+            videoRef.current.pause();
+        }
+    };
+
     return (
         <section id="about" className="py-28 bg-white overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -39,6 +46,7 @@ export default function AboutUs() {
                                 src="/The_Explainer__Dial_A_Genie.mp4"
                                 controls={isHovered}
                                 playsInline
+                                onEnded={handleVideoEnded}
                                 aria-label="AI and Human Collaboration Explainer Video"
                                 className="w-full aspect-video object-cover block"
                             />
